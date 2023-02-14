@@ -1,0 +1,252 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*importacion de letras*/
+
+@import url('https://fonts.googleapis.com/css2?family=Cedarville+Cursive&family=Poppins:wght@200;400&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+/*
+font-family: 'Cedarville Cursive', cursive; 200
+font-family: 'Poppins', sans-serif; 400 titulo
+font-family: 'Bebas Neue', cursive; 400 input
+*/
+
+/*menu de navegacion*/
+header {
+    grid-area: header;
+    width: 100%;
+    background: linear-gradient(#42f538, rgb(41, 224, 241));
+    display: flex;
+    justify-content: space-between;
+}
+
+/*logo de la empresa*/
+header .logo {
+    display: flex;
+    align-items: center;
+}
+
+/*imagen de la empresa*/
+header img {
+    width: 130px;
+}
+
+/*enlaces de navegacion*/
+header nav {
+    margin: 10px;
+    padding: 5px;
+}
+
+header a {
+    text-decoration: none;
+    font-weight: 600;
+    color: white;
+    padding-left: 10px;
+    display: inline-block;
+}
+
+/*efecto mouse*/
+header nav :hover {
+    color: blue;
+    transition-duration: 1000ms;
+}
+
+/*titulo*/
+h1 {
+    text-align: center;
+    margin: auto;
+    color: blue;
+    font-family: 'Poppins', sans-serif;
+}
+
+#mi {
+    color: orangered;
+}
+
+/*subtitulo*/
+h2 {
+    text-align: center;
+    margin: auto;
+    color: magenta;
+}
+
+body {
+    width: 100%;
+    display: grid;
+    gap: 5px;
+    grid-template-areas:
+        "header header header"
+        "titulo titulo titulo"
+        "container container extra"
+        "i i i "
+        "novedades novedades novedades"
+        "carrito carrito carrito"
+        "footer footer footer";
+}
+.titulo {
+    grid-area: titulo;
+}
+
+.container {
+    width: 100%;
+    grid-area: container;
+    background-color: lightcoral;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 5px;
+}
+
+h3 {
+    color: rgb(15, 14, 14);
+}
+
+.container input {
+    color: red;
+    width: 100%;
+}
+
+/*boton*/
+.añadir-catalogo {
+    font-family: 'Bebas Neue', cursive;
+    font-weight: 600;
+    font-size: 1em;
+}
+
+/*efecto boton mouse*/
+.añadir-catalogo:hover {
+    color: magenta;
+    background-color: aqua;
+}
+
+.container div {
+    margin: auto;
+    margin-bottom: 10px;
+}
+
+.container div img {
+    border-radius: 50%;
+}
+
+/*aca va las formas de pago y extras*/
+.extra {
+    grid-area: extra;
+    width: 100%;
+}
+
+.extra div {
+    display: flex;
+    width: 100%;
+    height: 150px;
+}
+
+.extra i {
+    color: red;
+    background-color: white;
+    font-weight: 600;
+    font-size: 1.5em;
+    text-align: center;
+    display: block;
+}
+#efectivo{
+    text-align: center;
+    color: blue;
+    font-size: 600;
+    font-size: x-large;
+}
+
+/*formas de pago*/
+#tarjeta1 {
+    background-image: url(tarjetas/itau\ solo.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#tarjeta2 {
+    background-image: url(tarjetas/mercado\ pago\ solo.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#tarjeta3 {
+    background-image: url(tarjetas/nacion\ solo.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+/*texto de Novedades*/
+i {
+    grid-area: i;
+    background-color: white;
+    color: rgb(213, 57, 234);
+    text-align: center;
+    font-family: 'Cedarville Cursive', cursive;
+    font-size: 30px;
+}
+
+.novedades {
+    grid-area: novedades;
+    background-color: cyan;
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    gap: 5px;
+}
+
+.novedades div {
+    margin: auto;
+}
+
+.novedades img {
+    border-radius: 50%;
+}
+
+.novedades input {
+    width: 100%;
+    color: tomato;
+}
+
+/*efecto mouse boton*/
+.añadir-novedades:hover {
+    color: magenta;
+    background-color: darkorchid;
+}
+
+.añadir-novedades {
+    font-family: 'Bebas Neue', cursive;
+    font-weight: 600;
+    font-size: 1em;
+    color: tomato;
+}
+/*carrito de compras*/
+.carrito{
+    grid-area: carrito;
+    border: solid red;
+    width: 100%;
+    height: auto;
+    margin: 15px 0 10px 0;
+    text-align: center;
+    font: 1.5em sans-serif;
+    color: blue;
+}
+footer {
+    width: 100%;
+    margin-top: 20px;
+    grid-area: footer;
+    text-align: center;
+    display: flex;
+    justify-content: space-around;
+}
+
+footer div {
+    width: 100%;
+    color: green;
+    font-weight: 600;
+}
+
