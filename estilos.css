@@ -20,7 +20,7 @@ font-family: 'Bebas Neue', cursive; 400 input
 header {
     grid-area: header;
     width: 100%;
-    background: linear-gradient(#42f538, rgb(41, 224, 241));
+    background: linear-gradient(#250d8f, rgb(41, 224, 241));
     display: flex;
     justify-content: space-between;
 }
@@ -52,29 +52,23 @@ header a {
 
 /*efecto mouse*/
 header nav :hover {
-    color: blue;
+    color: rgb(224, 241, 72);
     transition-duration: 1000ms;
+    transform: scale(1.2);
+    font-size: large;
 }
 
 /*titulo*/
 h1 {
     text-align: center;
-    margin: auto;
-    color: blue;
+    color: rgb(255, 165, 0);
+    margin: 20px 0;
     font-family: 'Poppins', sans-serif;
 }
 
-#mi {
-    color: orangered;
+#mayuscula {
+    color: rgb(0, 0, 255);
 }
-
-/*subtitulo*/
-h2 {
-    text-align: center;
-    margin: auto;
-    color: magenta;
-}
-
 body {
     width: 100%;
     display: grid;
@@ -95,7 +89,7 @@ body {
 .container {
     width: 100%;
     grid-area: container;
-    background-color: lightcoral;
+    background-color: rgba(123, 109, 173, 0.623);
     display: grid;
     grid-template-columns: auto auto auto;
     gap: 5px;
@@ -108,6 +102,7 @@ h3 {
 .container input {
     color: red;
     width: 100%;
+    font: 1.2em sans-serif;
 }
 
 /*boton*/
@@ -119,8 +114,8 @@ h3 {
 
 /*efecto boton mouse*/
 .añadir-catalogo:hover {
-    color: magenta;
-    background-color: aqua;
+    color: rgb(255, 255, 255);
+    background-color: rgb(110, 118, 220);
 }
 
 .container div {
@@ -183,39 +178,41 @@ h3 {
 
 /*texto de Novedades*/
 i {
+    margin-top: 20px;
     grid-area: i;
-    background-color: white;
-    color: rgb(213, 57, 234);
+    background-color: rgba(180, 169, 218, 0.623);
+    color: rgb(215, 91, 232);
     text-align: center;
     font-family: 'Cedarville Cursive', cursive;
-    font-size: 30px;
+    font-size: 50px;
 }
 
 .novedades {
     grid-area: novedades;
-    background-color: cyan;
+    background-color: rgba(123, 109, 173, 0.623);
     display: grid;
     grid-template-columns: auto auto auto auto;
-    gap: 5px;
+    gap: 10px;
 }
 
 .novedades div {
-    margin: auto;
+    padding: 10px;
 }
 
 .novedades img {
-    border-radius: 50%;
+    border-radius: 10%;
 }
 
 .novedades input {
     width: 100%;
     color: tomato;
+    font: 1.2em sans-serif;
 }
 
 /*efecto mouse boton*/
 .añadir-novedades:hover {
-    color: magenta;
-    background-color: darkorchid;
+    color: rgb(255, 255, 255);
+    background-color: rgb(110, 118, 220);
 }
 
 .añadir-novedades {
@@ -237,7 +234,7 @@ i {
 }
 footer {
     width: 100%;
-    margin-top: 20px;
+    margin: 10px 0;
     grid-area: footer;
     text-align: center;
     display: flex;
@@ -246,7 +243,8 @@ footer {
 
 footer div {
     width: 100%;
-    color: green;
+    color: rgb(76, 59, 176);
     font-weight: 600;
+    font-size: 1.4em;
 }
 

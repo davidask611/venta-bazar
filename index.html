@@ -1,396 +1,672 @@
 <!DOCTYPE html>
 <html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Venta de productos de cocina en general, podes solicitar lo que te guste y te enviamos a tu domicilio"
+    />
+    <meta
+      name="keywords"
+      content="cubiertos,platos,tapper,cocina,bazar,ollas"
+    />
+    <link rel="stylesheet" href="estilos.css" />
+    <title>Bazar</title>
+  </head>
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description"
-        content="Venta de productos de cocina en general, podes solicitar lo que te guste y te enviamos a tu domicilio">
-    <meta name="keywords" content="cubiertos,platos,tapper,cocina,bazar,ollas">
-    <link rel="stylesheet" href="estilos.css">
-    <title>Tienda Bazar</title>
-</head>
-
-<body>
+  <body>
     <!--menu de navegacion-->
 
     <header>
+      <div class="logo">
+        <img src="logo/logo.png" alt="logo bazar" />
+      </div>
 
-        <div class="logo">
-            <img src="logo/logo.png" alt="logo bazar">
-        </div>
-
-        <nav>
-            <a href="#contacto">Contacto</a>
-            <a href="registro.html" target="_blank" rel="noopener noreferrer">Sesion/Registro</a>
-            <a href="micuenta,html" target="_blank" rel="noopener noreferrer">Mi cuenta</a>
-            <a href="mi pedido.html" target="_blank" rel="noopener noreferrer">Mi pedido</a>
-        </nav>
-
+      <nav>
+        <a href="#contacto">Contacto</a>
+        <a href="registro.html" target="_blank" rel="noopener noreferrer"
+          >Sesion/Registro</a
+        >
+        <a href="mi pedido.html" target="_blank" rel="noopener noreferrer"
+          >Mi pedido</a
+        >
+      </nav>
     </header>
 
     <!--titulo-->
     <div class="titulo">
-        <h1><span id="mi">Mi</span> Tienda</h1>
-        <!--subtitulo-->
-        <h2>bazar</h2>
+      <h1><span id="mayuscula">M</span>i <span id="mayuscula">T</span>ienda</h1>
     </div>
 
     <!--contenido principal-->
 
     <div class="container">
-        <!--caja 1-->
+      <!--caja 1-->
 
-        <div class="caja1">
-            <h3><span id="nombre1">Nombre</span></h3>
-            <div id="img1">
-                <img src="imagenes/abre lata.png" alt="abre lata" width="200px">
-            </div>
-
-            <form action="">
-                <h3>$ <span id="precio1">Precio</span></h3>
-                <input type="number" name="cantidad" id="cant1" placeholder="indica la cantidad deseada">
-            </form>
-            <button onclick="comprarprod1()">Añadir</button>
+      <div class="caja1">
+        <h3><span id="nombre1">Nombre</span></h3>
+        <div id="img1">
+          <img src="imagenes/abre lata.png" alt="abre lata" width="200px" />
         </div>
 
-        <!--caja 2-->
+        <form action="">
+          <h3>$ <span id="precio1">Precio</span></h3>
+          <input
+            type="number"
+            name="cantidad"
+            id="cant1"
+            placeholder="indica la cantidad deseada"
+          />
+          <input
+            class="añadir-catalogo"
+            type="submit"
+            name="añadir"
+            value="añadir"
+          />
+        </form>
+        <!--<button onclick="comprarprod1()">Añadir</button>-->
+      </div>
 
-        <div class="caja2">
-            <h3>Nombre</h3>
-            <div id="img2">
-                <img src="imagenes/anafe.png" alt="anafe" width="200px">
-            </div>
+      <!--caja 2-->
 
-            <form action="">
-                <h3>$ Precio</h3>
-                <input type="number" name="cantidad" placeholder="indica la cantidad deseada">
-                <input class="añadir-catalogo" type="submit" name="añadir" value="añadir">
-            </form>
+      <div class="caja2">
+        <h3>Nombre</h3>
+        <div id="img2">
+          <img src="imagenes/anafe.png" alt="anafe" width="200px" />
         </div>
 
-        <!--caja 3-->
+        <form action="">
+          <h3>$ Precio</h3>
+          <input
+            type="number"
+            name="cantidad"
+            placeholder="indica la cantidad deseada"
+          />
+          <input
+            class="añadir-catalogo"
+            type="submit"
+            name="añadir"
+            value="añadir"
+          />
+        </form>
+      </div>
 
-        <div class="caja3">
-            <h3>Nombre</h3>
-            <div id="img3">
-                <img src="imagenes/batidor de mano.png" alt="batidor de mano" width="200px">
-            </div>
+      <!--caja 3-->
 
-            <form action="">
-                <h3>$ Precio</h3>
-                <input type="number" name="cantidad" placeholder="indica la cantidad deseada">
-                <input class="añadir-catalogo" type="submit" name="añadir" value="añadir">
-            </form>
+      <div class="caja3">
+        <h3>Nombre</h3>
+        <div id="img3">
+          <img
+            src="imagenes/batidor de mano.png"
+            alt="batidor de mano"
+            width="200px"
+          />
         </div>
 
-        <!--caja 4-->
+        <form action="">
+          <h3>$ Precio</h3>
+          <input
+            type="number"
+            name="cantidad"
+            placeholder="indica la cantidad deseada"
+          />
+          <input
+            class="añadir-catalogo"
+            type="submit"
+            name="añadir"
+            value="añadir"
+          />
+        </form>
+      </div>
 
-        <div class="caja4">
-            <h3>Nombre</h3>
-            <div id="img4">
-                <img src="imagenes/colador de chapa.png" alt="colador chapa" width="200px">
-            </div>
+      <!--caja 4-->
 
-            <form action="">
-                <h3>$ Precio</h3>
-                <input type="number" name="cantidad" placeholder="indica la cantidad deseada">
-                <input class="añadir-catalogo" type="submit" name="añadir" value="añadir">
-            </form>
+      <div class="caja4">
+        <h3>Nombre</h3>
+        <div id="img4">
+          <img
+            src="imagenes/colador de chapa.png"
+            alt="colador chapa"
+            width="200px"
+          />
         </div>
 
-        <!--caja 5-->
+        <form action="">
+          <h3>$ Precio</h3>
+          <input
+            type="number"
+            name="cantidad"
+            placeholder="indica la cantidad deseada"
+          />
+          <input
+            class="añadir-catalogo"
+            type="submit"
+            name="añadir"
+            value="añadir"
+          />
+        </form>
+      </div>
 
-        <div class="caja5">
-            <h3>Nombre</h3>
-            <div id="img5">
-                <img src="imagenes/combo cubierto x4.png" alt="combo cubierto x 4" width="200px">
-            </div>
+      <!--caja 5-->
 
-            <form action="">
-                <h3>$ Precio</h3>
-                <input type="number" name="cantidad" placeholder="indica la cantidad deseada">
-                <input class="añadir-catalogo" type="submit" name="añadir" value="añadir">
-            </form>
+      <div class="caja5">
+        <h3>Nombre</h3>
+        <div id="img5">
+          <img
+            src="imagenes/combo cubierto x4.png"
+            alt="combo cubierto x 4"
+            width="200px"
+          />
         </div>
 
-        <!--caja 6-->
+        <form action="">
+          <h3>$ Precio</h3>
+          <input
+            type="number"
+            name="cantidad"
+            placeholder="indica la cantidad deseada"
+          />
+          <input
+            class="añadir-catalogo"
+            type="submit"
+            name="añadir"
+            value="añadir"
+          />
+        </form>
+      </div>
 
-        <div class="caja6">
-            <h3>Nombre</h3>
-            <div id="img6">
-                <img src="imagenes/conservadora.png" alt="conservadora" width="200px">
-            </div>
+      <!--caja 6-->
 
-            <form action="">
-                <h3>$ Precio</h3>
-                <input type="number" name="cantidad" placeholder="indica la cantidad deseada">
-                <input class="añadir-catalogo" type="submit" name="añadir" value="añadir">
-            </form>
+      <div class="caja6">
+        <h3>Nombre</h3>
+        <div id="img6">
+          <img
+            src="imagenes/conservadora.png"
+            alt="conservadora"
+            width="200px"
+          />
         </div>
 
-        <!--caja 7-->
+        <form action="">
+          <h3>$ Precio</h3>
+          <input
+            type="number"
+            name="cantidad"
+            placeholder="indica la cantidad deseada"
+          />
+          <input
+            class="añadir-catalogo"
+            type="submit"
+            name="añadir"
+            value="añadir"
+          />
+        </form>
+      </div>
 
-        <div class="caja7">
-            <h3>Nombre</h3>
-            <div id="img7">
-                <img src="imagenes/escuridor de platos.png" alt="escuridor de platos" width="200px">
-            </div>
+      <!--caja 7-->
 
-            <form action="">
-                <h3>$ Precio</h3>
-                <input type="number" name="cantidad" placeholder="indica la cantidad deseada">
-                <input class="añadir-catalogo" type="submit" name="añadir" value="añadir">
-            </form>
+      <div class="caja7">
+        <h3>Nombre</h3>
+        <div id="img7">
+          <img
+            src="imagenes/escuridor de platos.png"
+            alt="escuridor de platos"
+            width="200px"
+          />
         </div>
 
-        <!--caja 8-->
+        <form action="">
+          <h3>$ Precio</h3>
+          <input
+            type="number"
+            name="cantidad"
+            placeholder="indica la cantidad deseada"
+          />
+          <input
+            class="añadir-catalogo"
+            type="submit"
+            name="añadir"
+            value="añadir"
+          />
+        </form>
+      </div>
 
-        <div class="caja8">
-            <h3>Nombre</h3>
-            <div id="img8">
-                <img src="imagenes/escurridor de cubiertos.png" alt="escurridor de cubiertos" width="200px">
-            </div>
+      <!--caja 8-->
 
-            <form action="">
-                <h3>$ Precio</h3>
-                <input type="number" name="cantidad" placeholder="indica la cantidad deseada">
-                <input class="añadir-catalogo" type="submit" name="añadir" value="añadir">
-            </form>
+      <div class="caja8">
+        <h3>Nombre</h3>
+        <div id="img8">
+          <img
+            src="imagenes/escurridor de cubiertos.png"
+            alt="escurridor de cubiertos"
+            width="200px"
+          />
         </div>
 
-        <!--caja 9-->
+        <form action="">
+          <h3>$ Precio</h3>
+          <input
+            type="number"
+            name="cantidad"
+            placeholder="indica la cantidad deseada"
+          />
+          <input
+            class="añadir-catalogo"
+            type="submit"
+            name="añadir"
+            value="añadir"
+          />
+        </form>
+      </div>
 
-        <div class="caja9">
-            <h3>Nombre</h3>
-            <div id="img9">
-                <img src="imagenes/espatula.png" alt="espatula" width="200px">
-            </div>
+      <!--caja 9-->
 
-            <form action="">
-                <h3>$ Precio</h3>
-                <input type="number" name="cantidad" placeholder="indica la cantidad deseada">
-                <input class="añadir-catalogo" type="submit" name="añadir" value="añadir">
-            </form>
+      <div class="caja9">
+        <h3>Nombre</h3>
+        <div id="img9">
+          <img src="imagenes/espatula.png" alt="espatula" width="200px" />
         </div>
 
-        <!--caja 10-->
+        <form action="">
+          <h3>$ Precio</h3>
+          <input
+            type="number"
+            name="cantidad"
+            placeholder="indica la cantidad deseada"
+          />
+          <input
+            class="añadir-catalogo"
+            type="submit"
+            name="añadir"
+            value="añadir"
+          />
+        </form>
+      </div>
 
-        <div class="caja10">
-            <h3>Nombre</h3>
-            <div id="img10">
-                <img src="imagenes/set ollas y sarten.png" alt="set ollas y sarten" width="200px">
-            </div>
+      <!--caja 10-->
 
-            <form action="">
-                <h3>$ Precio</h3>
-                <input type="number" name="cantidad" placeholder="indica la cantidad deseada">
-                <input class="añadir-catalogo" type="submit" name="añadir" value="añadir">
-            </form>
+      <div class="caja10">
+        <h3>Nombre</h3>
+        <div id="img10">
+          <img
+            src="imagenes/set ollas y sarten.png"
+            alt="set ollas y sarten"
+            width="200px"
+          />
         </div>
 
-        <!--caja 11-->
+        <form action="">
+          <h3>$ Precio</h3>
+          <input
+            type="number"
+            name="cantidad"
+            placeholder="indica la cantidad deseada"
+          />
+          <input
+            class="añadir-catalogo"
+            type="submit"
+            name="añadir"
+            value="añadir"
+          />
+        </form>
+      </div>
 
-        <div class="caja11">
-            <h3>Nombre</h3>
-            <div id="img11">
-                <img src="imagenes/set vaso x3.png" alt="set vaso x3" width="200px">
-            </div>
+      <!--caja 11-->
 
-            <form action="">
-                <h3>$ Precio</h3>
-                <input type="number" name="cantidad" placeholder="indica la cantidad deseada">
-                <input class="añadir-catalogo" type="submit" name="añadir" value="añadir">
-            </form>
+      <div class="caja11">
+        <h3>Nombre</h3>
+        <div id="img11">
+          <img src="imagenes/set vaso x3.png" alt="set vaso x3" width="200px" />
         </div>
 
-        <!--caja 12-->
+        <form action="">
+          <h3>$ Precio</h3>
+          <input
+            type="number"
+            name="cantidad"
+            placeholder="indica la cantidad deseada"
+          />
+          <input
+            class="añadir-catalogo"
+            type="submit"
+            name="añadir"
+            value="añadir"
+          />
+        </form>
+      </div>
 
-        <div class="caja12">
-            <h3>Nombre</h3>
-            <div id="img12">
-                <img src="imagenes/set vaso x4.png" alt="set vaso x4" width="200px">
-            </div>
+      <!--caja 12-->
 
-            <form action="">
-                <h3>$ Precio</h3>
-                <input type="number" name="cantidad" placeholder="indica la cantidad deseada">
-                <input class="añadir-catalogo" type="submit" name="añadir" value="añadir">
-            </form>
+      <div class="caja12">
+        <h3>Nombre</h3>
+        <div id="img12">
+          <img src="imagenes/set vaso x4.png" alt="set vaso x4" width="200px" />
         </div>
 
-        <!--caja 13-->
+        <form action="">
+          <h3>$ Precio</h3>
+          <input
+            type="number"
+            name="cantidad"
+            placeholder="indica la cantidad deseada"
+          />
+          <input
+            class="añadir-catalogo"
+            type="submit"
+            name="añadir"
+            value="añadir"
+          />
+        </form>
+      </div>
 
-        <div class="caja13">
-            <h3>Nombre</h3>
-            <div id="img13">
-                <img src="imagenes/tapper.png" alt="tapper" width="200px">
-            </div>
+      <!--caja 13-->
 
-            <form action="">
-                <h3>$ Precio</h3>
-                <input type="number" name="cantidad" placeholder="indica la cantidad deseada">
-                <input class="añadir-catalogo" type="submit" name="añadir" value="añadir">
-            </form>
+      <div class="caja13">
+        <h3>Nombre</h3>
+        <div id="img13">
+          <img src="imagenes/tapper.png" alt="tapper" width="200px" />
         </div>
 
-        <!--caja 14-->
+        <form action="">
+          <h3>$ Precio</h3>
+          <input
+            type="number"
+            name="cantidad"
+            placeholder="indica la cantidad deseada"
+          />
+          <input
+            class="añadir-catalogo"
+            type="submit"
+            name="añadir"
+            value="añadir"
+          />
+        </form>
+      </div>
 
-        <div class="caja14">
-            <h3>Nombre</h3>
-            <div id="img14">
-                <img src="imagenes/tenedor x4.png" alt="tenedor x4" width="200px">
-            </div>
+      <!--caja 14-->
 
-            <form action="">
-                <h3>$ Precio</h3>
-                <input type="number" name="cantidad" placeholder="indica la cantidad deseada">
-                <input class="añadir-catalogo" type="submit" name="añadir" value="añadir">
-            </form>
+      <div class="caja14">
+        <h3>Nombre</h3>
+        <div id="img14">
+          <img src="imagenes/tenedor x4.png" alt="tenedor x4" width="200px" />
         </div>
 
-        <!--caja 15-->
+        <form action="">
+          <h3>$ Precio</h3>
+          <input
+            type="number"
+            name="cantidad"
+            placeholder="indica la cantidad deseada"
+          />
+          <input
+            class="añadir-catalogo"
+            type="submit"
+            name="añadir"
+            value="añadir"
+          />
+        </form>
+      </div>
 
-        <div class="caja15">
-            <h3>Nombre</h3>
-            <div id="img15">
-                <img src="imagenes/termo terere negro.png" alt="termo terere negro" width="200px">
-            </div>
+      <!--caja 15-->
 
-            <form action="">
-                <h3>$ Precio</h3>
-                <input type="number" name="cantidad" placeholder="indica la cantidad deseada">
-                <input class="añadir-catalogo" type="submit" name="añadir" value="añadir">
-            </form>
+      <div class="caja15">
+        <h3>Nombre</h3>
+        <div id="img15">
+          <img
+            src="imagenes/termo terere negro.png"
+            alt="termo terere negro"
+            width="200px"
+          />
         </div>
 
-        <!--caja 16-->
+        <form action="">
+          <h3>$ Precio</h3>
+          <input
+            type="number"
+            name="cantidad"
+            placeholder="indica la cantidad deseada"
+          />
+          <input
+            class="añadir-catalogo"
+            type="submit"
+            name="añadir"
+            value="añadir"
+          />
+        </form>
+      </div>
 
-        <div class="caja16">
-            <h3>Nombre</h3>
-            <div id="img16">
-                <img src="imagenes/termo terere verde.png" alt="termo terere verde" width="200px">
-            </div>
+      <!--caja 16-->
 
-            <form action="">
-                <h3>$ Precio</h3>
-                <input type="number" name="cantidad" placeholder="indica la cantidad deseada">
-                <input class="añadir-catalogo" type="submit" name="añadir" value="añadir">
-            </form>
+      <div class="caja16">
+        <h3>Nombre</h3>
+        <div id="img16">
+          <img
+            src="imagenes/termo terere verde.png"
+            alt="termo terere verde"
+            width="200px"
+          />
         </div>
 
+        <form action="">
+          <h3>$ Precio</h3>
+          <input
+            type="number"
+            name="cantidad"
+            placeholder="indica la cantidad deseada"
+          />
+          <input
+            class="añadir-catalogo"
+            type="submit"
+            name="añadir"
+            value="añadir"
+          />
+        </form>
+      </div>
     </div>
 
     <!--publicidad o carrito-->
 
     <div class="extra">
-        <i>Formas de pago</i>
-        <p id="efectivo">Efectivo 10% Descuento</p>
-        <div id="tarjeta1"></div>
-        <div id="tarjeta2"></div>
-        <div id="tarjeta3"></div>
-        <br>
-        <!--publicidad-->
+      <i>Formas de pago</i>
+      <p id="efectivo">Efectivo 10% Descuento</p>
+      <div id="tarjeta1"></div>
+      <div id="tarjeta2"></div>
+      <div id="tarjeta3"></div>
+      <br />
+      <!--publicidad-->
     </div>
 
     <!--novedades-->
-    <i>novedades</i>
+    <i>Novedades</i>
     <div class="novedades">
-        <div class="item1">
-            <h3>Nombre</h3>
-            <img src="imagenes/mate autocebante.png" alt="mate autocebante" width="200px">
-            <form action="">
-                <h3>$ Precio</h3>
-                <input type="number" name="cantidad" placeholder="indica la cantidad">
-                <input class="añadir-novedades" type="submit" name="añadir" value="añadir">
-            </form>
-        </div>
+      <div class="item1">
+        <h3>Nombre</h3>
+        <img
+          src="imagenes/mate autocebante.png"
+          alt="mate autocebante"
+          width="200px"
+        />
+        <form action="">
+          <h3>$ Precio</h3>
+          <input
+            type="number"
+            name="cantidad"
+            placeholder="indica la cantidad"
+          />
+          <input
+            class="añadir-novedades"
+            type="submit"
+            name="añadir"
+            value="añadir"
+          />
+        </form>
+      </div>
 
-        <div class="item2">
-            <h3>Nombre</h3>
-            <img src="imagenes/paellera-de-hierro-fundido-de-34-cm.png" alt="paellera-de-hierro-fundido-de-34-cm"
-                width="200px">
-            <form action="">
-                <h3>$ Precio</h3>
-                <input type="number" name="cantidad" placeholder="indica la cantidad">
-                <input class="añadir-novedades" type="submit" name="añadir" value="añadir">
-            </form>
-        </div>
+      <div class="item2">
+        <h3>Nombre</h3>
+        <img
+          src="imagenes/paellera-de-hierro-fundido-de-34-cm.png"
+          alt="paellera-de-hierro-fundido-de-34-cm"
+          width="200px"
+        />
+        <form action="">
+          <h3>$ Precio</h3>
+          <input
+            type="number"
+            name="cantidad"
+            placeholder="indica la cantidad"
+          />
+          <input
+            class="añadir-novedades"
+            type="submit"
+            name="añadir"
+            value="añadir"
+          />
+        </form>
+      </div>
 
-        <div class="item3">
-            <h3>Nombre</h3>
-            <img src="imagenes/papelera-rejilla-plastico-12-litros.png" alt="papelera-rejilla-plastico-12-litros"
-                width="200px">
-            <form action="">
-                <h3>$ Precio</h3>
-                <input type="number" name="cantidad" placeholder="indica la cantidad">
-                <input class="añadir-novedades" type="submit" name="añadir" value="añadir">
-            </form>
-        </div>
+      <div class="item3">
+        <h3>Nombre</h3>
+        <img
+          src="imagenes/papelera-rejilla-plastico-12-litros.png"
+          alt="papelera-rejilla-plastico-12-litros"
+          width="200px"
+        />
+        <form action="">
+          <h3>$ Precio</h3>
+          <input
+            type="number"
+            name="cantidad"
+            placeholder="indica la cantidad"
+          />
+          <input
+            class="añadir-novedades"
+            type="submit"
+            name="añadir"
+            value="añadir"
+          />
+        </form>
+      </div>
 
-        <div class="item4">
-            <h3>Nombre</h3>
-            <img src="imagenes/pava acero.png" alt="pava acero" width="200px">
-            <form action="">
-                <h3>$ Precio</h3>
-                <input type="number" name="cantidad" placeholder="indica la cantidad">
-                <input class="añadir-novedades" type="submit" name="añadir" value="añadir">
-            </form>
-        </div>
+      <div class="item4">
+        <h3>Nombre</h3>
+        <img src="imagenes/pava acero.png" alt="pava acero" width="200px" />
+        <form action="">
+          <h3>$ Precio</h3>
+          <input
+            type="number"
+            name="cantidad"
+            placeholder="indica la cantidad"
+          />
+          <input
+            class="añadir-novedades"
+            type="submit"
+            name="añadir"
+            value="añadir"
+          />
+        </form>
+      </div>
 
-        <div class="item5">
-            <h3>Nombre</h3>
-            <img src="imagenes/pisa papa.png" alt="pisa papa" width="200px">
-            <form action="">
-                <h3>$ Precio</h3>
-                <input type="number" name="cantidad" placeholder="indica la cantidad">
-                <input class="añadir-novedades" type="submit" name="añadir" value="añadir">
-            </form>
-        </div>
+      <div class="item5">
+        <h3>Nombre</h3>
+        <img src="imagenes/pisa papa.png" alt="pisa papa" width="200px" />
+        <form action="">
+          <h3>$ Precio</h3>
+          <input
+            type="number"
+            name="cantidad"
+            placeholder="indica la cantidad"
+          />
+          <input
+            class="añadir-novedades"
+            type="submit"
+            name="añadir"
+            value="añadir"
+          />
+        </form>
+      </div>
 
-        <div class="item6">
-            <h3>Nombre</h3>
-            <img src="imagenes/recipiente detergente.png" alt="recipiente detergente" width="200px">
-            <form action="">
-                <h3>$ Precio</h3>
-                <input type="number" name="cantidad" placeholder="indica la cantidad">
-                <input class="añadir-novedades" type="submit" name="añadir" value="añadir">
-            </form>
-        </div>
+      <div class="item6">
+        <h3>Nombre</h3>
+        <img
+          src="imagenes/recipiente detergente.png"
+          alt="recipiente detergente"
+          width="200px"
+        />
+        <form action="">
+          <h3>$ Precio</h3>
+          <input
+            type="number"
+            name="cantidad"
+            placeholder="indica la cantidad"
+          />
+          <input
+            class="añadir-novedades"
+            type="submit"
+            name="añadir"
+            value="añadir"
+          />
+        </form>
+      </div>
 
-        <div class="item7">
-            <h3>Nombre</h3>
-            <img src="imagenes/set cocina x5.png" alt="set cocina x5" width="200px">
-            <form action="">
-                <h3>$ Precio</h3>
-                <input type="number" name="cantidad" placeholder="indica la cantidad">
-                <input class="añadir-novedades" type="submit" name="añadir" value="añadir">
-            </form>
-        </div>
+      <div class="item7">
+        <h3>Nombre</h3>
+        <img
+          src="imagenes/set cocina x5.png"
+          alt="set cocina x5"
+          width="200px"
+        />
+        <form action="">
+          <h3>$ Precio</h3>
+          <input
+            type="number"
+            name="cantidad"
+            placeholder="indica la cantidad"
+          />
+          <input
+            class="añadir-novedades"
+            type="submit"
+            name="añadir"
+            value="añadir"
+          />
+        </form>
+      </div>
 
-        <div class="item8">
-            <h3>Nombre</h3>
-            <img src="imagenes/set matero plastico.png" alt="set matero plastico" width="200px">
-            <form action="">
-                <h3>$ Precio</h3>
-                <input type="number" name="cantidad" placeholder="indica la cantidad">
-                <input class="añadir-novedades" type="submit" name="añadir" value="añadir">
-            </form>
-        </div>
+      <div class="item8">
+        <h3>Nombre</h3>
+        <img
+          src="imagenes/set matero plastico.png"
+          alt="set matero plastico"
+          width="200px"
+        />
+        <form action="">
+          <h3>$ Precio</h3>
+          <input
+            type="number"
+            name="cantidad"
+            placeholder="indica la cantidad"
+          />
+          <input
+            class="añadir-novedades"
+            type="submit"
+            name="añadir"
+            value="añadir"
+          />
+        </form>
+      </div>
     </div>
     <div class="carrito">
-        <p id="tucarrito">Mi Pedido</p>
-        <p class="nuevopedido"></p>
+      <p id="tucarrito">Mi Pedido</p>
+      <p class="nuevopedido"></p>
     </div>
     <!--pie de pagina-->
 
     <footer>
-        <div>Creado por davidask611@gmail.com</div>
-        <div>Copyright 2022</div>
-        <div id="contacto">11-2244-5566 / bazar@gmail.com</div>
+      <div>Creado por davidask611@gmail.com</div>
+      <div>Copyright 2022</div>
+      <div id="contacto">11-2244-5566</div>
     </footer>
-
-</body>
-
+  </body>
 </html>
