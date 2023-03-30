@@ -1,41 +1,95 @@
 <!DOCTYPE html>
 <html lang="es">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="estilo-registro.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="estilo-registro.css" />
     <title>Registro/Cuenta</title>
-</head>
+  </head>
 
-<body>
-    <div id="registro">
-
-        <form class="registro-formulario" action="" method="post">
-            <p>Registro</p>
-            <div class="control"><input type="text" name="nombre" placeholder="indica tu nombre" required></div>
-            <div class="control"><input type="text" name="apellidp" placeholder="indica tu apellido" required></div>
-            <div class="control"><input type="password" name="contraseña" placeholder="indica tu contraseña"></div>
-            <div class="control"><input type="text" name="direccion" placeholder="indica tu direccion" required></div>
-            <div class="control"><input type="text" name="localidad" placeholder="indica tu localidad" required></div>
-            <div class="control"><input type="email" name="email" placeholder="indica tu correo"></div>
-            <input class="boton" type="submit" value="registrarme">
-            <p><a href="#usuario">Ya tengo cuenta !!</a></p>
-        </form>
-
-
-        <form class="sesion-formulario" action="" method="post">
-            <p>Sesion</p>
-            <div class="control"><input type="text" name="apodo" placeholder="indica tu apodo"></div>
-            <div class="control"><input type="password" name="contraseña" placeholder="indica tu contraseña"></div>
-            <input class="boton" type="submit" value="iniciar sesion">
-            <p><a href="#registro">Registrarme</a></p>
-        </form>
-
-
-
+  <body>
+    <form class="registro-formulario" action="">
+      <h2>Registro</h2>
+      <div class="registro-campo">
+        <label for="usuario">Usuario:</label>
+        <input
+          type="text"
+          name="usuario"
+          id="usuario"
+          placeholder="Indique su usuario"
+          required
+        />
+      </div>
+      <div class="registro-campo">
+        <label for="clave">Clave:</label>
+        <input
+          type="password"
+          name="clave"
+          id="clave"
+          placeholder="Indique su clave"
+          required
+        />
+      </div>
+      <div class="registro-campo">
+        <label for="email">Email:</label>
+        <input
+          type="email"
+          name="email"
+          id="email"
+          placeholder="Indique su email"
+          required
+        />
+      </div>
+      <div class="registro-campo">
+        <label for="direccion">Dirección:</label>
+        <input
+          type="text"
+          name="direccion"
+          id="direccion"
+          placeholder="Indique su dirección"
+          required
+        />
+      </div>
+      <div class="registro-campo">
+        <label for="localidad">Localidad:</label>
+        <input
+          type="text"
+          name="localidad"
+          id="localidad"
+          placeholder="Indique su localidad"
+          required
+        />
+      </div>
+      <button type="submit">Registrarse</button>
+    </form>
+    <div class="iniciar-sesion">
+      <p>¿Ya tienes una cuenta?</p>
+      <a href="#sesion-campo">Iniciar Sesión</a>
     </div>
-</body>
-
+    <form action="#" method="POST" class="sesion-formulario" id="sesion-campo">
+      <h2>Iniciar sesión</h2>
+      <div class="sesion-campo">
+        <label for="usuario">Usuario</label>
+        <input
+          type="text"
+          name="usuario"
+          id="usuario"
+          placeholder="Indique su usuario"
+          required
+        />
+      </div>
+      <div class="sesion-campo">
+        <label for="sesion-clave">Clave</label>
+        <input
+          type="password"
+          name="clave"
+          id="clave"
+          placeholder="Indique su clave"
+          required
+        />
+      </div>
+      <button type="submit" class="boton-sesion">Iniciar sesión</button>
+    </form>
+  </body>
 </html>
